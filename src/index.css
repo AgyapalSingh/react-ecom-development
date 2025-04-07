@@ -8,7 +8,7 @@
   --bg-color: #fffefa;
   --btn-primary-color: #183457;
   --btn-secondary-color: #f5f2ee;
-  --bg-annoucement-bar :#f5f2ee;
+  --bg-annoucement-bar: #f5f2ee;
   --text-color: #000000;
   --font-family-primary: "Poppins", sans-serif;
   --font-family-secondary: "Playfair Display", serif;
@@ -52,22 +52,21 @@ body {
   cursor: pointer;
 }
 
-
-header{
-    height: 100px;
+header {
+  height: 100px;
 }
 
-.sections{
-    height: 500vh;
+.sections {
+  height: 500vh;
 }
 
-header{
+header {
   height: 100px;
   display: flex;
   flex-direction: column;
 }
 
-.uniq-ag-announcement-bar{
+.uniq-ag-announcement-bar {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,6 +75,10 @@ header{
   background-color: var(--bg-annoucement-bar);
 }
 
-.uniq-ag-announcement-bar p{
+.uniq-ag-animation-container {
+  overflow: hidden;
+}
+
+.uniq-ag-announcement-bar p {
   font-size: var(--font-size-text-small-d);
 }
