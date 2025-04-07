@@ -1,11 +1,12 @@
 import React from 'react'
 import NavBarDesk from './NavBarDesk'
-import AnnoucementBar from './AnnoucementBar'
+import AnnounceMentBar from './AnnoucementBar'
+
 
 const Header = () => {
   return (
     <header>
-      <AnnoucementBar/>
+      <AnnounceMentBar/>
       <NavBarDesk/>
     </header>
   )
