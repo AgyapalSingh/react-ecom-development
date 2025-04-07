@@ -3,7 +3,12 @@ import Layout from "../Layout/Layout"
 
 const HomePage = () => {
   return (
-    <Layout >Home</Layout>
+    <Layout>Home
+
+      <section className='sections'>
+
+      </section>
+    </Layout>
   )
 }
 
