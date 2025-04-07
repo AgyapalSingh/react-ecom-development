@@ -1,5 +1,5 @@
 import React from 'react'
-import NavBarDesk from './NavBarDesk'
+import NavBar from './NavBar'
 import AnnounceMentBar from './AnnounceMentBar'
 
 
@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header>
       <AnnounceMentBar/>
-      <NavBarDesk/>
+      <NavBar/>
     </header>
   )
 }
