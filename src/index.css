@@ -8,6 +8,7 @@
   --bg-color: #fffefa;
   --btn-primary-color: #183457;
   --btn-secondary-color: #f5f2ee;
+  --bg-annoucement-bar :#f5f2ee;
   --text-color: #000000;
   --font-family-primary: "Poppins", sans-serif;
   --font-family-secondary: "Playfair Display", serif;
@@ -58,4 +59,23 @@ header{
 
 .sections{
     height: 500vh;
+}
+
+header{
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.uniq-ag-announcement-bar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  background-color: var(--bg-annoucement-bar);
+}
+
+.uniq-ag-announcement-bar p{
+  font-size: var(--font-size-text-small-d);
 }
