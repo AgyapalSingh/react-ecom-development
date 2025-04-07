@@ -1,6 +1,6 @@
 import React from 'react'
 import NavBarDesk from './NavBarDesk'
-import AnnounceMentBar from './AnnoucementBar'
+import AnnounceMentBar from './AnnounceMentBar'
 
 
 const Header = () => {
