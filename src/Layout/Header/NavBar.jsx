@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { PiShoppingCartSimple } from "react-icons/pi";
-import { LuSearch} from "react-icons/lu";
+import { LuSearch } from "react-icons/lu";
 import { HiOutlineBars3CenterLeft } from "react-icons/hi2";
 import { IoMdClose } from "react-icons/io";
 
 const NavBar = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
+
   return (
     <nav className="uniq-ag-navbar">
       <div className="uniq-ag-navbar-logo">
@@ -39,8 +42,12 @@ const NavBar = () => {
           <PiShoppingCartSimple className="nav-icon" />
         </button>
 
-        <button className="uniq-ag-navbar-hamburger">
-          <HiOutlineBars3CenterLeft className="nav-icon" />
+        <button className="uniq-ag-navbar-hamburger" onClick={toggleMobileMenu}>
+          {isMobileMenuOpen ? (
+            <IoMdClose className="nav-icon" />
+          ) : (
+            <HiOutlineBars3CenterLeft className="nav-icon" />
+          )}
         </button>
       </div>
     </nav>
