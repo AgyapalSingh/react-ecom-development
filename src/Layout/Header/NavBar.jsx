@@ -50,6 +50,20 @@ const NavBar = () => {
           )}
         </button>
       </div>
+
+      <div
+        className={`uniq-ag-mobile-nav-drawer ${
+          isMobileMenuOpen ? "mobileDrawerOpen" : ""
+        }`}
+      >
+        <ul className="uniq-ag-mobile-nav-drawer-menu-list">
+          <li>PRODUCTS</li>
+          <li>REVIEWS</li>
+          <li>ABOUT US</li>
+          <li>FAQS</li>
+          <li>TRACK ORDER</li>
+        </ul>
+      </div>
     </nav>
   );
 };

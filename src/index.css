@@ -211,3 +211,36 @@ header {
     display: block;
   }
 }
+
+
+/* NavBar Mobile Drawer */
+.uniq-ag-mobile-nav-drawer{
+  position: fixed;
+  top: 110px;
+  right: 0;
+  background-color: var(--bg-color);
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(+100%);
+}
+
+.uniq-ag-mobile-nav-drawer.mobileDrawerOpen{
+  transform: translateX(0%);
+}
+
+.uniq-ag-mobile-nav-drawer-menu-list{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 20px;
+  background-color: var(--bg-annoucement-bar);
+  border-radius: 10px;
+}
+
+.uniq-ag-mobile-nav-drawer-menu-list li{
+  padding: 15px 15px;
+  font-size: var(--font-size-text-small-m);
+  border-bottom: 1px solid var(--bg-color);
+  letter-spacing: 1px;
+}
