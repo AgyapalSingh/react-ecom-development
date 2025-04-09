@@ -13,6 +13,7 @@ import DisclaimerPage from "./Pages/FooterPages.jsx/DisclaimerPage";
 import PrivacyPolicyPage from "./Pages/FooterPages.jsx/PrivacyPolicyPage";
 import TermsAndConditions from "./Pages/FooterPages.jsx/TermsAndConditions";
 import ShippingPolicy from "./Pages/FooterPages.jsx/ShippingPolicy";
+import CancelRefundPolicy from "./Pages/FooterPages.jsx/CancelRefundPolicy";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicyPage/>} />
         <Route path="/terms-conditions" element={<TermsAndConditions/>} />
         <Route path="/shipping-policy" element={<ShippingPolicy/>} />
+        <Route path="/cancellation-refund-policy" element={<CancelRefundPolicy/>} />
 
       </Routes>
       <Footer />
