@@ -1,4 +1,10 @@
 import { NavLink } from "react-router-dom";
+import { MdLocalPhone } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
+import { AiFillInstagram } from "react-icons/ai";
+import { FaFacebook } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 
 const FooterNavBar = () => {
   return (
@@ -63,7 +69,39 @@ const FooterNavBar = () => {
         </menu>
       </div>
 
-      <div className="uniq-ag-footer-navbar-menus"></div>
+      <div className="uniq-ag-footer-navbar-menus">
+        <div className="uniq-ag-footer-contact-options">
+          <h1>Get in Touch</h1>
+          <div className="uniq-ag-footer-contacts">
+            <div>
+              <MdLocalPhone className="uniq-ag-footer-contacts-icon" />
+              <a href="tel:+917087113442"> +91-7087113442</a>
+            </div>
+            <div>
+              <MdEmail className="uniq-ag-footer-contacts-icon" />{" "}
+              <a href="mailto:care@uniqaya.com">Send email</a>
+            </div>
+          </div>
+        </div>
+
+        <div className="uniq-ag-footer-social-options">
+          <h1>Follow Us</h1>
+          <div className="uniq-ag-socials">
+            <a target="_blank" href="https://www.instagram.com/uniqayalifestyle/">
+              <AiFillInstagram />
+            </a>
+            <a target="_blank" href="https://www.facebook.com/Uniqayalifestyle/">
+              <FaFacebook />
+            </a>
+            <a target="_blank" href="https://www.youtube.com/@uniqayalifestyle">
+              <FaYoutube />
+            </a>
+            <a target="_blank" href="https://in.linkedin.com/company/uniqayalifestyle">
+              <FaLinkedinIn />
+            </a>
+          </div>
+        </div>
+      </div>
     </nav>
   );
 };
