@@ -47,7 +47,7 @@ const NavBar = () => {
       </div>
 
       <div className="uniq-ag-navbar-btns">
-        <button>
+        <button id="Search">
           <LuSearch className="nav-icon" />
         </button>
 
@@ -56,7 +56,7 @@ const NavBar = () => {
           <PiShoppingCartSimple className="nav-icon" />
         </button>
 
-        <button className="uniq-ag-navbar-hamburger" onClick={toggleMobileMenu}>
+        <button className="uniq-ag-navbar-hamburger" id="mobileDrawer" onClick={toggleMobileMenu}>
           {isMobileMenuOpen ? (
             <IoMdClose className="nav-icon" />
           ) : (
