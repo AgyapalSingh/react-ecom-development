@@ -15,6 +15,7 @@ import TermsAndConditions from "./Pages/FooterPages.jsx/TermsAndConditions";
 import ShippingPolicy from "./Pages/FooterPages.jsx/ShippingPolicy";
 import CancelRefundPolicy from "./Pages/FooterPages.jsx/CancelRefundPolicy";
 import OffersPage from "./Pages/FooterPages.jsx/OffersPage";
+import PressAndMedia from "./Pages/FooterPages.jsx/PressAndMedia";
 
 function App() {
   return (
@@ -38,6 +39,8 @@ function App() {
         <Route path="/shipping-policy" element={<ShippingPolicy/>} />
         <Route path="/cancellation-refund-policy" element={<CancelRefundPolicy/>} />
         <Route path="/offers" element={<OffersPage/>} />
+        <Route path="/press" element={<PressAndMedia/>} />
+        
 
       </Routes>
       <Footer />
