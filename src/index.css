@@ -252,12 +252,12 @@ header {
 /* Footer */
 
 footer {
-  height: 500px;
+  height: 400px;
   background-color: var(--bg-annoucement-bar);
 }
 
 .uniq-ag-footer-navbar {
-  height: 450px;
+  height: 350px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 10px;
@@ -323,7 +323,13 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  footer {
+    height: 500px;
+  }
+  
+   
   .uniq-ag-footer-navbar {
+    height: 450px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 10px;
