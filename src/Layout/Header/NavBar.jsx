@@ -24,21 +24,25 @@ const NavBar = () => {
 
       <div className="uniq-ag-navbar-menus">
         <menu>
-          <NavLink to="/shop-all-products">
-            <li> PRODUCTS</li>
-          </NavLink>
-          <NavLink to="/top-reviews">
-            <li>REVIEWS</li>
-          </NavLink>
-          <NavLink to="/about-us">
-            <li>ABOUT US</li>
-          </NavLink>
-          <NavLink to="/faqs">
-            <li>FAQS</li>
-          </NavLink>
-          <NavLink to="https://uniqaya.com/apps/parcelpanel">
-            <li>TRACK ORDER</li>
-          </NavLink>
+          <li>
+            <NavLink to="/shop-all-products">PRODUCTS</NavLink>
+          </li>
+          <li>
+            <NavLink to="/top-reviews">REVIEWS</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about-us">ABOUT US</NavLink>
+          </li>
+
+          <li>
+            <NavLink to="/faqs">FAQS</NavLink>
+          </li>
+
+          <li>
+            <NavLink to="https://uniqaya.com/apps/parcelpanel">
+              TRACK ORDER
+            </NavLink>
+          </li>
         </menu>
       </div>
 
@@ -67,7 +71,7 @@ const NavBar = () => {
         }`}
       >
         <menu className="uniq-ag-mobile-nav-drawer-menu-list">
-          <NavLink onClick={toggleMobileMenu}  to="/shop-all-products">
+          <NavLink onClick={toggleMobileMenu} to="/shop-all-products">
             <li> PRODUCTS</li>
           </NavLink>
           <NavLink onClick={toggleMobileMenu} to="/top-reviews">
@@ -79,7 +83,10 @@ const NavBar = () => {
           <NavLink onClick={toggleMobileMenu} to="/faqs">
             <li>FAQS</li>
           </NavLink>
-          <NavLink onClick={toggleMobileMenu} to="https://uniqaya.com/apps/parcelpanel">
+          <NavLink
+            onClick={toggleMobileMenu}
+            to="https://uniqaya.com/apps/parcelpanel"
+          >
             <li>TRACK ORDER</li>
           </NavLink>
         </menu>
