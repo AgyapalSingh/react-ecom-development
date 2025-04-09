@@ -67,19 +67,19 @@ const NavBar = () => {
         }`}
       >
         <ul className="uniq-ag-mobile-nav-drawer-menu-list">
-          <NavLink to="/shop-all-products">
+          <NavLink onClick={toggleMobileMenu}  to="/shop-all-products">
             <li> PRODUCTS</li>
           </NavLink>
-          <NavLink to="/top-reviews">
+          <NavLink onClick={toggleMobileMenu} to="/top-reviews">
             <li>REVIEWS</li>
           </NavLink>
-          <NavLink to="/about-us">
+          <NavLink onClick={toggleMobileMenu} to="/about-us">
             <li>ABOUT US</li>
           </NavLink>
-          <NavLink to="/faqs">
+          <NavLink onClick={toggleMobileMenu} to="/faqs">
             <li>FAQS</li>
           </NavLink>
-          <NavLink to="https://uniqaya.com/apps/parcelpanel">
+          <NavLink onClick={toggleMobileMenu} to="https://uniqaya.com/apps/parcelpanel">
             <li>TRACK ORDER</li>
           </NavLink>
         </ul>

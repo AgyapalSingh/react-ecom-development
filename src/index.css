@@ -133,7 +133,7 @@ header {
   width: 100%;
 }
 
-.uniq-ag-navbar-menus ul li {
+.uniq-ag-navbar-menus ul a li {
   font-family: var(--font-family-primary);
   color: var(--text-color-light);
   font-size: var(--font-size-text-small-d);
@@ -244,10 +244,11 @@ header {
     border-radius: 10px;
   }
 
-  .uniq-ag-mobile-nav-drawer-menu-list li {
+  .uniq-ag-mobile-nav-drawer-menu-list a li {
     padding: 15px 15px;
     font-size: var(--font-size-text-small-m);
     border-bottom: 1px solid var(--bg-color);
     letter-spacing: 1px;
+    color: var(--text-color-dark);
   }
 }
