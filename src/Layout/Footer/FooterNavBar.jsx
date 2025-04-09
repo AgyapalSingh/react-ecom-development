@@ -87,16 +87,16 @@ const FooterNavBar = () => {
         <div className="uniq-ag-footer-social-options">
           <h1>Follow Us</h1>
           <div className="uniq-ag-socials">
-            <a target="_blank" href="https://www.instagram.com/uniqayalifestyle/">
+            <a target="_blank" title="Uniqaya Lifestyle on Instagram" href="https://www.instagram.com/uniqayalifestyle/">
               <AiFillInstagram />
             </a>
-            <a target="_blank" href="https://www.facebook.com/Uniqayalifestyle/">
+            <a target="_blank" title="Uniqaya Lifestyle on Facebook" href="https://www.facebook.com/Uniqayalifestyle/">
               <FaFacebook />
             </a>
-            <a target="_blank" href="https://www.youtube.com/@uniqayalifestyle">
+            <a target="_blank" title="Uniqaya Lifestyle on YouTube" href="https://www.youtube.com/@uniqayalifestyle">
               <FaYoutube />
             </a>
-            <a target="_blank" href="https://in.linkedin.com/company/uniqayalifestyle">
+            <a target="_blank" title="Uniqaya Lifestyle on LinkedIn" href="https://in.linkedin.com/company/uniqayalifestyle">
               <FaLinkedinIn />
             </a>
           </div>

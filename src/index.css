@@ -202,6 +202,10 @@ header {
     width: 50%;
     justify-content: flex-start;
   }
+  .uniq-ag-navbar-logo img {
+    width: 130px;
+    height: auto;
+  }
 
   .uniq-ag-navbar-menus {
     display: none;
@@ -328,8 +332,7 @@ footer {
   footer {
     height: 500px;
   }
-  
-   
+
   .uniq-ag-footer-navbar {
     height: 450px;
     display: grid;
