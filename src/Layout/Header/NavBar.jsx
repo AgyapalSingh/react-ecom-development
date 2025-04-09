@@ -24,11 +24,21 @@ const NavBar = () => {
 
       <div className="uniq-ag-navbar-menus">
         <ul>
-          <li>PRODUCTS</li>
-          <li>REVIEWS</li>
-          <li>ABOUT US</li>
-          <li>FAQS</li>
-          <li>TRACK ORDER</li>
+          <NavLink to="/shop-all-products">
+            <li> PRODUCTS</li>
+          </NavLink>
+          <NavLink to="/top-reviews">
+            <li>REVIEWS</li>
+          </NavLink>
+          <NavLink to="/about-us">
+            <li>ABOUT US</li>
+          </NavLink>
+          <NavLink to="/faqs">
+            <li>FAQS</li>
+          </NavLink>
+          <NavLink to="https://uniqaya.com/apps/parcelpanel">
+            <li>TRACK ORDER</li>
+          </NavLink>
         </ul>
       </div>
 
@@ -57,11 +67,21 @@ const NavBar = () => {
         }`}
       >
         <ul className="uniq-ag-mobile-nav-drawer-menu-list">
-          <li>PRODUCTS</li>
-          <li>REVIEWS</li>
-          <li>ABOUT US</li>
-          <li>FAQS</li>
-          <li>TRACK ORDER</li>
+          <NavLink to="/shop-all-products">
+            <li> PRODUCTS</li>
+          </NavLink>
+          <NavLink to="/top-reviews">
+            <li>REVIEWS</li>
+          </NavLink>
+          <NavLink to="/about-us">
+            <li>ABOUT US</li>
+          </NavLink>
+          <NavLink to="/faqs">
+            <li>FAQS</li>
+          </NavLink>
+          <NavLink to="https://uniqaya.com/apps/parcelpanel">
+            <li>TRACK ORDER</li>
+          </NavLink>
         </ul>
       </div>
     </nav>
