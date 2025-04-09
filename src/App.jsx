@@ -2,9 +2,9 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import HomePage from "./Pages/HomePage";
 import Header from "./Layout/Header/Header";
-import ReviewsPage from "./Pages/ReviewsPage";
-import AboutUsPage from "./Pages/AboutUsPage";
-import FaqsPage from "./Pages/FaqsPage";
+import ReviewsPage from "./Pages/HeaderPages/ReviewsPage";
+import AboutUsPage from "./Pages/HeaderPages/AboutUsPage";
+import FaqsPage from "./Pages/HeaderPages/FaqsPage";
 
 function App() {
   return (
