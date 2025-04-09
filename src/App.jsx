@@ -16,6 +16,7 @@ import ShippingPolicy from "./Pages/FooterPages.jsx/ShippingPolicy";
 import CancelRefundPolicy from "./Pages/FooterPages.jsx/CancelRefundPolicy";
 import OffersPage from "./Pages/FooterPages.jsx/OffersPage";
 import PressAndMedia from "./Pages/FooterPages.jsx/PressAndMedia";
+import ChangePage from "./Pages/FooterPages.jsx/ChangePage";
 
 function App() {
   return (
@@ -33,15 +34,17 @@ function App() {
         {/* Footer NavBar */}
         <Route path="/contact-us" element={<ContactUsPage />} />
         <Route path="/blogs" element={<AllBlogsPage />} />
-        <Route path="/disclaimer" element={<DisclaimerPage/>} />
-        <Route path="/privacy-policy" element={<PrivacyPolicyPage/>} />
-        <Route path="/terms-conditions" element={<TermsAndConditions/>} />
-        <Route path="/shipping-policy" element={<ShippingPolicy/>} />
-        <Route path="/cancellation-refund-policy" element={<CancelRefundPolicy/>} />
-        <Route path="/offers" element={<OffersPage/>} />
-        <Route path="/press" element={<PressAndMedia/>} />
-        
-
+        <Route path="/disclaimer" element={<DisclaimerPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+        <Route path="/terms-conditions" element={<TermsAndConditions />} />
+        <Route path="/shipping-policy" element={<ShippingPolicy />} />
+        <Route
+          path="/cancellation-refund-policy"
+          element={<CancelRefundPolicy />}
+        />
+        <Route path="/offers" element={<OffersPage />} />
+        <Route path="/press" element={<PressAndMedia />} />
+        <Route path="/bethechange" element={<ChangePage />} />
       </Routes>
       <Footer />
     </>
