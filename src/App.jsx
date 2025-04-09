@@ -9,6 +9,7 @@ import ProductsPage from "./Pages/HeaderPages/ProductsPage";
 import Footer from "./Layout/Footer/Footer";
 import ContactUsPage from "./Pages/FooterPages.jsx/ContactUsPage";
 import AllBlogsPage from "./Pages/FooterPages.jsx/AllBlogsPage";
+import DisclaimerPage from "./Pages/FooterPages.jsx/DisclaimerPage";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         {/* Footer NavBar */}
         <Route path="/contact-us" element={<ContactUsPage />} />
         <Route path="/blogs" element={<AllBlogsPage />} />
+        <Route path="/disclaimer" element={<DisclaimerPage/>} />
 
       </Routes>
       <Footer />
