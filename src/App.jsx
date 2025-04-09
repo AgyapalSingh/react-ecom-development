@@ -8,6 +8,7 @@ import FaqsPage from "./Pages/HeaderPages/FaqsPage";
 import ProductsPage from "./Pages/HeaderPages/ProductsPage";
 import Footer from "./Layout/Footer/Footer";
 import ContactUsPage from "./Pages/FooterPages.jsx/ContactUsPage";
+import AllBlogsPage from "./Pages/FooterPages.jsx/AllBlogsPage";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
 
         {/* Footer NavBar */}
         <Route path="/contact-us" element={<ContactUsPage />} />
+        <Route path="/blogs" element={<AllBlogsPage />} />
 
       </Routes>
       <Footer />
