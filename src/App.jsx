@@ -11,6 +11,7 @@ import ContactUsPage from "./Pages/FooterPages.jsx/ContactUsPage";
 import AllBlogsPage from "./Pages/FooterPages.jsx/AllBlogsPage";
 import DisclaimerPage from "./Pages/FooterPages.jsx/DisclaimerPage";
 import PrivacyPolicyPage from "./Pages/FooterPages.jsx/PrivacyPolicyPage";
+import TermsAndConditions from "./Pages/FooterPages.jsx/TermsAndConditions";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/blogs" element={<AllBlogsPage />} />
         <Route path="/disclaimer" element={<DisclaimerPage/>} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage/>} />
+        <Route path="/terms-conditions" element={<TermsAndConditions/>} />
 
       </Routes>
       <Footer />
