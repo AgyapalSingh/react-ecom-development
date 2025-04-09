@@ -1,8 +1,10 @@
-import React from 'react'
-
 const CopyRight = () => {
+  const currentYear = new Date().getFullYear()
+
   return (
-    <div>CopyRight</div>
+    <div className='uniq-ag-copyright'>
+      <p>© {currentYear} Uniqaya Lifestyle | All Rights Reserved</p>
+    </div>
   )
 }
 

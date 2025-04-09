@@ -1,4 +1,3 @@
-import React from "react";
 import FooterNavBar from "./FooterNavBar";
 import CopyRight from "./CopyRight";
 
