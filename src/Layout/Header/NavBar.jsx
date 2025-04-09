@@ -23,7 +23,7 @@ const NavBar = () => {
       </div>
 
       <div className="uniq-ag-navbar-menus">
-        <ul>
+        <menu>
           <NavLink to="/shop-all-products">
             <li> PRODUCTS</li>
           </NavLink>
@@ -39,7 +39,7 @@ const NavBar = () => {
           <NavLink to="https://uniqaya.com/apps/parcelpanel">
             <li>TRACK ORDER</li>
           </NavLink>
-        </ul>
+        </menu>
       </div>
 
       <div className="uniq-ag-navbar-btns">
@@ -66,7 +66,7 @@ const NavBar = () => {
           isMobileMenuOpen ? "mobileDrawerOpen" : ""
         }`}
       >
-        <ul className="uniq-ag-mobile-nav-drawer-menu-list">
+        <menu className="uniq-ag-mobile-nav-drawer-menu-list">
           <NavLink onClick={toggleMobileMenu}  to="/shop-all-products">
             <li> PRODUCTS</li>
           </NavLink>
@@ -82,7 +82,7 @@ const NavBar = () => {
           <NavLink onClick={toggleMobileMenu} to="https://uniqaya.com/apps/parcelpanel">
             <li>TRACK ORDER</li>
           </NavLink>
-        </ul>
+        </menu>
       </div>
     </nav>
   );

@@ -125,7 +125,7 @@ header {
   height: 100%;
 }
 
-.uniq-ag-navbar-menus ul {
+.uniq-ag-navbar-menus menu {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -133,7 +133,7 @@ header {
   width: 100%;
 }
 
-.uniq-ag-navbar-menus ul a li {
+.uniq-ag-navbar-menus menu a li {
   font-family: var(--font-family-primary);
   color: var(--text-color-light);
   font-size: var(--font-size-text-small-d);

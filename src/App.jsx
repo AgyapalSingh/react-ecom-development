@@ -6,6 +6,7 @@ import ReviewsPage from "./Pages/HeaderPages/ReviewsPage";
 import AboutUsPage from "./Pages/HeaderPages/AboutUsPage";
 import FaqsPage from "./Pages/HeaderPages/FaqsPage";
 import ProductsPage from "./Pages/HeaderPages/ProductsPage";
+import Footer from "./Layout/Footer/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/about-us" element={<AboutUsPage />} />
         <Route path="/faqs" element={<FaqsPage />} />
       </Routes>
+      <Footer />
     </>
   );
 }
