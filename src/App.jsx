@@ -10,6 +10,7 @@ import Footer from "./Layout/Footer/Footer";
 import ContactUsPage from "./Pages/FooterPages.jsx/ContactUsPage";
 import AllBlogsPage from "./Pages/FooterPages.jsx/AllBlogsPage";
 import DisclaimerPage from "./Pages/FooterPages.jsx/DisclaimerPage";
+import PrivacyPolicyPage from "./Pages/FooterPages.jsx/PrivacyPolicyPage";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/contact-us" element={<ContactUsPage />} />
         <Route path="/blogs" element={<AllBlogsPage />} />
         <Route path="/disclaimer" element={<DisclaimerPage/>} />
+        <Route path="/privacy-policy" element={<PrivacyPolicyPage/>} />
 
       </Routes>
       <Footer />
