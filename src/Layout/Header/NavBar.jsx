@@ -56,7 +56,12 @@ const NavBar = () => {
           <PiShoppingCartSimple className="nav-icon" />
         </button>
 
-        <button className="uniq-ag-navbar-hamburger" id="mobileDrawer" aria-label="mobileDrawer" onClick={toggleMobileMenu}>
+        <button
+          className="uniq-ag-navbar-hamburger"
+          id="mobileDrawer"
+          aria-label="mobileDrawer"
+          onClick={toggleMobileMenu}
+        >
           {isMobileMenuOpen ? (
             <IoMdClose className="nav-icon" />
           ) : (
@@ -71,24 +76,37 @@ const NavBar = () => {
         }`}
       >
         <menu className="uniq-ag-mobile-nav-drawer-menu-list">
-          <NavLink onClick={toggleMobileMenu} to="/shop-all-products">
-            <li> PRODUCTS</li>
-          </NavLink>
-          <NavLink onClick={toggleMobileMenu} to="/top-reviews">
-            <li>REVIEWS</li>
-          </NavLink>
-          <NavLink onClick={toggleMobileMenu} to="/about-us">
-            <li>ABOUT US</li>
-          </NavLink>
-          <NavLink onClick={toggleMobileMenu} to="/faqs">
-            <li>FAQS</li>
-          </NavLink>
-          <NavLink
-            onClick={toggleMobileMenu}
-            to="https://uniqaya.com/apps/parcelpanel"
-          >
-            <li>TRACK ORDER</li>
-          </NavLink>
+          <li>
+            <NavLink onClick={toggleMobileMenu} to="/shop-all-products">
+              PRODUCTS
+            </NavLink>
+          </li>
+          <li>
+            <NavLink onClick={toggleMobileMenu} to="/top-reviews">
+              REVIEWS
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink onClick={toggleMobileMenu} to="/about-us">
+              ABOUT US
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink onClick={toggleMobileMenu} to="/faqs">
+              FAQS
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink
+              onClick={toggleMobileMenu}
+              to="https://uniqaya.com/apps/parcelpanel"
+            >
+              TRACK ORDER
+            </NavLink>
+          </li>
         </menu>
       </div>
     </nav>

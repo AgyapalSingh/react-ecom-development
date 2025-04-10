@@ -246,11 +246,14 @@ header {
     border-radius: 10px;
   }
 
-  .uniq-ag-mobile-nav-drawer-menu-list a li {
+  .uniq-ag-mobile-nav-drawer-menu-list li {
     padding: 15px 15px;
     font-size: var(--font-size-text-small-m);
     border-bottom: 1px solid var(--bg-color);
     letter-spacing: 1px;
+  }
+
+  .uniq-ag-mobile-nav-drawer-menu-list li a{
     color: var(--text-color-dark);
   }
 }
