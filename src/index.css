@@ -281,7 +281,7 @@ footer {
   margin-top: 15px;
 }
 
-.uniq-ag-footer-navbar-menus menu a li {
+.uniq-ag-footer-navbar-menus menu li a{
   font-family: var(--font-family-primary);
   color: var(--text-color-dark);
   font-size: var(--font-size-text-small-d);

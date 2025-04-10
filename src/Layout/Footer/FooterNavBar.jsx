@@ -12,60 +12,68 @@ const FooterNavBar = () => {
       <div className="uniq-ag-footer-navbar-menus">
         <h1>Support</h1>
         <menu>
-          <NavLink to="/about-us">
-            <li> About Us</li>
-          </NavLink>
-          <NavLink to="/contact-us">
-            <li>Contact Us</li>
-          </NavLink>
-          <NavLink to="/blogs">
-            <li>Blogs</li>
-          </NavLink>
-          <NavLink to="/faqs">
-            <li>FAQS</li>
-          </NavLink>
-          <NavLink to="https://uniqaya.com/apps/parcelpanel">
-            <li>TRACK ORDER</li>
-          </NavLink>
+          <li>
+            <NavLink to="/about-us">About Us</NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact-us">Contact Us</NavLink>
+          </li>
+          <li>
+            <NavLink to="/blogs">Blogs</NavLink>
+          </li>
+
+          <li>
+            <NavLink to="/faqs">FAQS</NavLink>
+          </li>
+
+          <li>
+            <NavLink to="https://uniqaya.com/apps/parcelpanel">
+              TRACK ORDER
+            </NavLink>
+          </li>
         </menu>
       </div>
 
       <div className="uniq-ag-footer-navbar-menus">
         <h1>Policy Info</h1>
         <menu>
-          <NavLink to="/disclaimer">
-            <li> Disclaimer</li>
-          </NavLink>
-          <NavLink to="/privacy-policy">
-            <li>Privacy Policy</li>
-          </NavLink>
-          <NavLink to="/terms-conditions">
-            <li>Terms & Conditions</li>
-          </NavLink>
-          <NavLink to="/shipping-policy">
-            <li>Shipping Policy</li>
-          </NavLink>
-          <NavLink to="/cancellation-refund-policy">
-            <li>Cancellation/Refund Policy</li>
-          </NavLink>
+          <li>
+            <NavLink to="/disclaimer">Disclaimer</NavLink>
+          </li>
+          <li>
+            <NavLink to="/privacy-policy">Privacy Policy</NavLink>
+          </li>
+          <li>
+            <NavLink to="/terms-conditions">Terms & Conditions</NavLink>
+          </li>
+          <li>
+            <NavLink to="/shipping-policy">Shipping Policy</NavLink>
+          </li>
+          <li>
+            <NavLink to="/cancellation-refund-policy">
+              Cancellation/Refund Policy
+            </NavLink>
+          </li>
         </menu>
       </div>
 
       <div className="uniq-ag-footer-navbar-menus">
         <h1>Highlights</h1>
         <menu>
-          <NavLink to="https://uniqayalifestyle.com/highlights/">
-            <li>Ingredient of the Month</li>
-          </NavLink>
-          <NavLink to="/offers">
-            <li>Offers</li>
-          </NavLink>
-          <NavLink to="/press">
-            <li>Press & Media</li>
-          </NavLink>
-          <NavLink to="/bethechange">
-            <li>C.H.A.N.G.E</li>
-          </NavLink>
+          <li>
+            <NavLink to="https://uniqayalifestyle.com/highlights/">
+              Ingredient of the Month
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/offers">Offers</NavLink>
+          </li>
+          <li>
+            <NavLink to="/press">Press & Media</NavLink>
+          </li>
+          <li>
+            <NavLink to="/bethechange">C.H.A.N.G.E</NavLink>
+          </li>
         </menu>
       </div>
 
@@ -87,16 +95,32 @@ const FooterNavBar = () => {
         <div className="uniq-ag-footer-social-options">
           <h1>Follow Us</h1>
           <div className="uniq-ag-socials">
-            <a target="_blank" title="Uniqaya Lifestyle on Instagram" href="https://www.instagram.com/uniqayalifestyle/">
+            <a
+              target="_blank"
+              title="Uniqaya Lifestyle on Instagram"
+              href="https://www.instagram.com/uniqayalifestyle/"
+            >
               <AiFillInstagram />
             </a>
-            <a target="_blank" title="Uniqaya Lifestyle on Facebook" href="https://www.facebook.com/Uniqayalifestyle/">
+            <a
+              target="_blank"
+              title="Uniqaya Lifestyle on Facebook"
+              href="https://www.facebook.com/Uniqayalifestyle/"
+            >
               <FaFacebook />
             </a>
-            <a target="_blank" title="Uniqaya Lifestyle on YouTube" href="https://www.youtube.com/@uniqayalifestyle">
+            <a
+              target="_blank"
+              title="Uniqaya Lifestyle on YouTube"
+              href="https://www.youtube.com/@uniqayalifestyle"
+            >
               <FaYoutube />
             </a>
-            <a target="_blank" title="Uniqaya Lifestyle on LinkedIn" href="https://in.linkedin.com/company/uniqayalifestyle">
+            <a
+              target="_blank"
+              title="Uniqaya Lifestyle on LinkedIn"
+              href="https://in.linkedin.com/company/uniqayalifestyle"
+            >
               <FaLinkedinIn />
             </a>
           </div>
