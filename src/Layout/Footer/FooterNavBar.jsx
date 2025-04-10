@@ -51,7 +51,7 @@ const FooterNavBar = () => {
           </li>
           <li>
             <NavLink to="/cancellation-refund-policy">
-              Cancellation/Refund Policy
+              Cancellation Policy
             </NavLink>
           </li>
         </menu>
