@@ -15,8 +15,10 @@ const NavBar = () => {
         <Link to="/">
           <img
             alt="Uniqaya-Logo"
-            // width={150}
-            // height={50}
+
+            rel="preload" fetchpriority="high" as="image"
+            width="100%"
+            height="100%"
             src="https://cdn.shopify.com/s/files/1/0589/0192/1956/files/Uniqaya_Logo_Wide_Clean_Functional.png?v=1724408288"
           />
         </Link>
