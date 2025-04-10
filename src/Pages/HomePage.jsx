@@ -1,15 +1,19 @@
-import React from 'react'
-import Layout from "../Layout/Layout"
+import React from "react";
+import Layout from "../Layout/Layout";
+import ShopAllProducts from "../Collections/ShopAllProducts";
+import AllCollections from "../Collections/AllCollections";
 
 const HomePage = () => {
   return (
-    <Layout>Home
-
-      <section className='sections'>
-
+    <Layout>
+      {/* <section className="sections">
+        <AllCollections />
+      </section> */}
+      <section className="sections">
+        <ShopAllProducts />
       </section>
     </Layout>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;
