@@ -17,13 +17,12 @@ const NavBar = () => {
             alt="Uniqaya Logo"
             fetchPriority="high"
             width={170}
-            height="auto"
             src="https://cdn.shopify.com/s/files/1/0589/0192/1956/files/Uniqaya_Logo_Wide_Clean_Functional.png?v=1724408288&width=170"
             srcSet={`
-    https://cdn.shopify.com/s/files/1/0589/0192/1956/files/Uniqaya_Logo_Wide_Clean_Functional.png?v=1724408288&width=130 130w,
-    https://cdn.shopify.com/s/files/1/0589/0192/1956/files/Uniqaya_Logo_Wide_Clean_Functional.png?v=1724408288&width=170 170w,
-    https://cdn.shopify.com/s/files/1/0589/0192/1956/files/Uniqaya_Logo_Wide_Clean_Functional.png?v=1724408288&width=200 200w
-  `}
+        https://cdn.shopify.com/s/files/1/0589/0192/1956/files/Uniqaya_Logo_Wide_Clean_Functional.png?v=1724408288&width=130 130w,
+        https://cdn.shopify.com/s/files/1/0589/0192/1956/files/Uniqaya_Logo_Wide_Clean_Functional.png?v=1724408288&width=170 170w,
+        https://cdn.shopify.com/s/files/1/0589/0192/1956/files/Uniqaya_Logo_Wide_Clean_Functional.png?v=1724408288&width=200 200w
+      `}
             sizes="(max-width: 768px) 130px, 170px"
           />
         </Link>
