@@ -407,6 +407,7 @@ footer {
 .uniq-ag-all-collections {
   display: flex;
   flex-direction: column;
+  margin-bottom: 100px;
 }
 
 .uniq-ag-all-collections-header {
@@ -464,6 +465,7 @@ footer {
 /* Collections */
 .uniq-ag-collections-loader {
   min-height: 100vh;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
 }
