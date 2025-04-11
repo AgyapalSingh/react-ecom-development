@@ -9,9 +9,6 @@ const HomePage = () => {
       <section className="sections">
         <AllCollections />
       </section>
-      {/* <section className="sections">
-        <ShopAllProducts />
-      </section> */}
     </Layout>
   );
 };
