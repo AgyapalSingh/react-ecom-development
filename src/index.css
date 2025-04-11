@@ -432,4 +432,8 @@ footer {
   .uniq-ag-all-collections-list {
     grid-template-columns: repeat(2, 1fr);
   }
+  .uniq-ag-collection-card-title h2 {
+    font-size: var(--font-size-text-small-m);
+    font-weight: 300;
+  }
 }
