@@ -1,4 +1,3 @@
-
 /* font-family: "Playfair Display", serif; */
 /* font-family: "Poppins", sans-serif; */
 
@@ -129,7 +128,7 @@ header {
   width: 100%;
 }
 
-.uniq-ag-navbar-menus menu li a{
+.uniq-ag-navbar-menus menu li a {
   font-family: var(--font-family-primary);
   color: var(--text-color-light);
   font-size: var(--font-size-text-small-d);
@@ -252,7 +251,7 @@ header {
     letter-spacing: 1px;
   }
 
-  .uniq-ag-mobile-nav-drawer-menu-list li a{
+  .uniq-ag-mobile-nav-drawer-menu-list li a {
     color: var(--text-color-dark);
   }
 }
@@ -283,7 +282,7 @@ footer {
   margin-top: 15px;
 }
 
-.uniq-ag-footer-navbar-menus menu li a{
+.uniq-ag-footer-navbar-menus menu li a {
   font-family: var(--font-family-primary);
   color: var(--text-color-dark);
   font-size: var(--font-size-text-small-d);
@@ -359,5 +358,45 @@ footer {
 @media screen and (max-width: 768px) {
   .uniq-ag-copyright p {
     font-size: var(--font-size-text-Xlsmall-m);
+  }
+}
+
+/* Collection card */
+.uniq-ag-collection-card {
+  background-color: var(--bg-annoucement-bar);
+  height: 250px;
+  width: 90%;
+  align-self: center;
+}
+
+/* All Collections */
+.uniq-ag-all-collections-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 30px;
+  place-items: center;
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1536px) {
+  .uniq-ag-all-collections-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .uniq-ag-all-collections-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .uniq-ag-all-collections-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .uniq-ag-all-collections-list {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
