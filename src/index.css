@@ -394,15 +394,32 @@ footer {
 .uniq-ag-collection-card-img img {
   height: 100%;
   border-radius: 20px 20px 0px 0px;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 .uniq-ag-collection-card-img img:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
+/* Collections */
+.uniq-ag-all-collections {
+  display: flex;
+  flex-direction: column;
+}
 
-/* All Collections */
+.uniq-ag-all-collections-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.uniq-ag-all-collections-header h2{
+  font-family: var(--font-family-secondary);
+  font-size: var(--font-size-heading-large-d);
+  color: var(--btn-primary-color);
+}
+
 .uniq-ag-all-collections-list {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -429,6 +446,10 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  .uniq-ag-all-collections-header h2{
+    font-size: var(--font-size-heading-large-m);
+  }
+
   .uniq-ag-all-collections-list {
     grid-template-columns: repeat(2, 1fr);
   }

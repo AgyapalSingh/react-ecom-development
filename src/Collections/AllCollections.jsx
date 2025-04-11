@@ -25,10 +25,9 @@ const AllCollections = () => {
         <h2>All Collections</h2>
       </div>
 
-      <span>{collections.length}</span>
       <div className="uniq-ag-all-collections-list">
         {collections.map(({ node }) => (
-          <CollectionCard key={node.id} collection={node}/>
+          <CollectionCard key={node.id} collection={node} />
         ))}
       </div>
     </div>
