@@ -16,7 +16,7 @@ const AllCollections = () => {
     } catch (error) {
       console.log(error);
     } finally {
-      setLoading(false);
+      setLoading(true);
     }
   };
   useEffect(() => {

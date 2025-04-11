@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
 
 const CollectionCardsLoader = () => {
   return (
-    <div>CollectionCardsLoader</div>
-  )
-}
+    <div className="uniq-ag-collections-loader">
+      <div className="uniq-ag-collections-loader-header">
+        <h2></h2>
+      </div>
 
-export default CollectionCardsLoader
+      <div className="uniq-ag-collections-loader-list"></div>
+    </div>
+  );
+};
+
+export default CollectionCardsLoader;
