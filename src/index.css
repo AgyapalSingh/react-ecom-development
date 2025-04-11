@@ -366,8 +366,41 @@ footer {
   background-color: var(--bg-annoucement-bar);
   height: 250px;
   width: 90%;
-  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px 10px 0px 0px;
 }
+
+.uniq-ag-collection-card-title {
+  height: 25px;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.uniq-ag-collection-card-title h2 {
+  font-size: var(--font-size-text-large-d);
+  font-weight: 300;
+}
+
+.uniq-ag-collection-card-img {
+  height: 225px;
+  overflow: hidden;
+}
+
+.uniq-ag-collection-card-img img {
+  height: 100%;
+  border-radius: 20px 20px 0px 0px;
+  transition: transform 0.3s ease; 
+}
+
+.uniq-ag-collection-card-img img:hover {
+  transform: scale(1.05); 
+}
+
 
 /* All Collections */
 .uniq-ag-all-collections-list {
