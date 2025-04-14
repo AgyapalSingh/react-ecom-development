@@ -7,6 +7,9 @@ const HomePage = () => {
   return (
     <Layout>
       <section className="sections">
+        <ShopAllProducts />
+      </section>
+      <section className="sections">
         <AllCollections />
       </section>
     </Layout>
