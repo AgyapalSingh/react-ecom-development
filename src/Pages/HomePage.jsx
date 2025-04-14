@@ -6,12 +6,12 @@ import AllCollections from "../Collections/AllCollections";
 const HomePage = () => {
   return (
     <Layout>
-      <section className="sections">
+      {/* <section className="sections">
         <ShopAllProducts />
-      </section>
-      <section className="sections">
+      </section> */}
+      {/* <section className="sections">
         <AllCollections />
-      </section>
+      </section> */}
     </Layout>
   );
 };
