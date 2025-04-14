@@ -15,8 +15,8 @@ const ProductCard = ({ product, collectionHandle }) => {
           <img
             src={
               product.images.edges[0]?.node.src?.replace(
-                /(\.[\w\d_-]+)$/i,
-                "_400x$1"
+                /(\.[\w\d_-]+)(\?v=\d+)?$/i,
+                "_400x$1$2"
               ) || "default-product_400x.jpg"
             }
             alt={product.title || "Product image"}
@@ -28,6 +28,7 @@ const ProductCard = ({ product, collectionHandle }) => {
               objectFit: "cover",
               display: "block",
             }}
+            loading="lazy"
           />
         </picture>
       </div>
