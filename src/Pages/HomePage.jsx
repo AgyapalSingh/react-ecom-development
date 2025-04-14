@@ -6,9 +6,9 @@ import AllCollections from "../Collections/AllCollections";
 const HomePage = () => {
   return (
     <Layout>
-      {/* <section className="sections">
+      <section className="sections">
         <ShopAllProducts />
-      </section> */}
+      </section>
       {/* <section className="sections">
         <AllCollections />
       </section> */}
