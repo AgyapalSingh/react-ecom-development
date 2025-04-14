@@ -20,7 +20,6 @@ const ProductCard = ({ product, collectionHandle }) => {
               ) || "default-product_400x.jpg"
             }
             alt={product.title || "Product image"}
-            loading="lazy"
             width="400"
             height="250"
             style={{
