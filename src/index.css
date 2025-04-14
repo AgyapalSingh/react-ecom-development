@@ -665,9 +665,6 @@ footer {
   }
 }
 
-
-
-
 /* Product Card Skeleton*/
 .uniq-ag-products-loader {
   min-height: 100vh;
@@ -736,8 +733,14 @@ footer {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .uniq-ag-products-loader-list {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .uniq-ag-products-loader-list {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
