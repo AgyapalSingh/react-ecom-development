@@ -634,11 +634,18 @@ footer {
   .uniq-ag-all-products-list {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .uniq-ag-all-products-header h2 {
+    font-size: var(--font-size-heading-medium-d);
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .uniq-ag-all-products-list {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .uniq-ag-all-products-header h2 {
+    font-size: var(--font-size-heading-small-d);
   }
 }
 

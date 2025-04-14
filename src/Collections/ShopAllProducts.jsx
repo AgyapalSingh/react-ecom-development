@@ -15,7 +15,6 @@ const ShopAllProducts = () => {
     try {
       const response = await shopifyApi.post("", query);
       const shopAllProducts = response.data.data.collection?.products?.edges;
-      console.log(shopAllProducts);
       setSelectProducts(shopAllProducts);
     } catch (error) {
       setSelectError(error);
