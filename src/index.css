@@ -897,6 +897,11 @@ footer {
   .uniq-ag-ecoIcon-marquee {
     width: 90%;
   }
+
+  .uniq-ag-ecoIcon-marquee-content {
+    gap: 0px;
+  }
+
   .uniq-ag-ecoIcon-marquee-content img {
     width: 100px;
     height: auto;
