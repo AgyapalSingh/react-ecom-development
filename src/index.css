@@ -238,6 +238,7 @@ header {
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
     transform: translateX(+100%);
+    z-index: 10;
   }
 
   .uniq-ag-mobile-nav-drawer.mobileDrawerOpen {
@@ -601,7 +602,6 @@ footer {
   display: flex;
   flex-direction: column;
   margin-bottom: 100px;
-  position: relative;
 }
 
 .uniq-ag-all-products-header {
