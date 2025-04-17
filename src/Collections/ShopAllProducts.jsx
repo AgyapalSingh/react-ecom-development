@@ -65,12 +65,14 @@ const ShopAllProducts = () => {
 
             <div className="uniq-ag-scroll-arrows">
               <button
+                aria-label="left arrow"
                 onClick={() => scroll("left")}
                 className="uniq-ag-arrow-btn left"
               >
                 <FaChevronLeft />
               </button>
               <button
+                aria-label="right arrow"
                 onClick={() => scroll("right")}
                 className="uniq-ag-arrow-btn right"
               >
