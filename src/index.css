@@ -207,7 +207,7 @@ header {
     width: 50%;
     justify-content: flex-start;
   }
-  
+
   .uniq-ag-navbar-logo img {
     width: 130px;
     height: auto;
@@ -601,6 +601,7 @@ footer {
   display: flex;
   flex-direction: column;
   margin-bottom: 100px;
+  position: relative;
 }
 
 .uniq-ag-all-products-header {
@@ -616,24 +617,60 @@ footer {
   color: var(--btn-primary-color);
 }
 
-.uniq-ag-all-products-list {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  row-gap: 50px;
-  place-items: center;
+.uniq-ag-products-list-container {
+  position: relative;
+}
+
+.uniq-ag-scroll-arrows {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+.uniq-ag-arrow-btn {
+  background: var(--bg-annoucement-bar);
+  color: var(--btn-primary-color);
+  padding: 10px;
+  height: 60px;
+  width: 60px;
+  font-size: var(--font-size-heading-small-d);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1;
+  transition: background 0.3s ease;
+  border: none;
+  outline: none;
+}
+
+.uniq-ag-arrow-btn:hover {
+  background: transparent;
+}
+
+.uniq-ag-arrow-btn.left {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.uniq-ag-arrow-btn.right {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translate(50%, -50%);
 }
 
 .uniq-ag-all-products-list {
   display: flex;
-  overflow: scroll;
+  overflow-x: scroll;
   gap: 20px;
   padding: 0px 20px 30px 20px;
-}
-
-
-.uniq-ag-all-products-list::-webkit-scrollbar-thumb {
-  background: #c5d9f1;
-  cursor: pointer;
+  scroll-behavior: smooth;
 }
 
 @media screen and (min-width: 1281px) and (max-width: 1536px) {
