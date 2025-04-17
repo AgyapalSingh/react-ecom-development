@@ -1,7 +1,7 @@
 import React from "react";
 
 const ProductCardsLoader = () => {
-  const loaderCount = 10;
+  const loaderCount = 6;
   return (
     <div className="uniq-ag-products-loader">
       <div className="uniq-ag-products-loader-header">

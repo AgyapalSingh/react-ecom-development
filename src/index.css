@@ -673,26 +673,18 @@ footer {
   scroll-behavior: smooth;
 }
 
-@media screen and (min-width: 1281px) and (max-width: 1536px) {
-  .uniq-ag-all-products-list {
-    grid-template-columns: repeat(4, 1fr);
-  }
+.uniq-ag-all-products-list::-webkit-scrollbar {
+  display: none;
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-  .uniq-ag-all-products-list {
-    grid-template-columns: repeat(3, 1fr);
-  }
 
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
   .uniq-ag-all-products-header h2 {
     font-size: var(--font-size-heading-medium-d);
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .uniq-ag-all-products-list {
-    grid-template-columns: repeat(3, 1fr);
-  }
   .uniq-ag-all-products-header h2 {
     font-size: var(--font-size-heading-small-d);
   }
@@ -702,17 +694,10 @@ footer {
   .uniq-ag-all-products-header h2 {
     font-size: var(--font-size-heading-large-m);
   }
-
-  .uniq-ag-all-products-list {
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 20px;
-  }
-
   .uniq-ag-products-card-title h2 {
     font-size: var(--font-size-text-small-m);
     font-weight: 300;
   }
-
   .uniq-ag-product-image {
     height: 200px;
   }
@@ -722,17 +707,10 @@ footer {
   .uniq-ag-all-products-header h2 {
     font-size: var(--font-size-heading-large-m);
   }
-
-  .uniq-ag-all-products-list {
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 20px;
-  }
-
   .uniq-ag-products-card-title h2 {
     font-size: var(--font-size-text-small-m);
     font-weight: 300;
   }
-
   .uniq-ag-product-image {
     height: 250px;
   }
@@ -741,7 +719,6 @@ footer {
 /* Product Card Skeleton/ Loader  ====================================================================================================================================================== */
 
 .uniq-ag-products-loader {
-  min-height: 100vh;
   margin-bottom: 100px;
   display: flex;
   flex-direction: column;
@@ -769,14 +746,19 @@ footer {
 }
 
 .uniq-ag-products-loader-list {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  row-gap: 50px;
-  place-items: center;
+  display: flex;
+  overflow-x: scroll;
+  gap: 20px;
+  padding: 0px 20px 30px 20px;
+  scroll-behavior: smooth;
+}
+
+.uniq-ag-products-loader-list::-webkit-scrollbar {
+  display: none;
 }
 
 .products-loader-card {
-  width: 90%;
+  min-width: 300px;
   height: 400px;
   background: linear-gradient(
     to right,
@@ -787,34 +769,4 @@ footer {
   background-size: 200%;
   background-position: 0% 0%;
   animation: pulse 1s ease-in-out infinite;
-}
-
-@media screen and (min-width: 1281px) and (max-width: 1536px) {
-  .uniq-ag-products-loader-list {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-  .uniq-ag-products-loader-list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .uniq-ag-products-loader-list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .uniq-ag-products-loader-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width: 481px) {
-  .uniq-ag-products-loader-list {
-    grid-template-columns: repeat(1, 1fr);
-  }
 }
