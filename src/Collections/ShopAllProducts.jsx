@@ -16,7 +16,7 @@ const ShopAllProducts = () => {
 
   const scroll = (direction) => {
     if (scrollRef.current) {
-      const scrollAmount = 400;
+      const scrollAmount = 320;
       scrollRef.current.scrollBy({
         left: direction === "left" ? -scrollAmount : scrollAmount,
         behavior: "smooth",
