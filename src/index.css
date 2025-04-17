@@ -676,7 +676,6 @@ footer {
   display: none;
 }
 
-
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
   .uniq-ag-all-products-header h2 {
     font-size: var(--font-size-heading-medium-d);
@@ -770,53 +769,136 @@ footer {
   animation: pulse 1s ease-in-out infinite;
 }
 
-
 /* Components  ====================================================================================================================================================== */
 
 /* Video Components  ====================================================================================================================================================== */
-.uniq-ag-video-component{
+.uniq-ag-video-component {
   width: 100%;
   height: 100%;
 }
 
-.uniq-ag-large-video{
+.uniq-ag-large-video {
   display: none;
 }
 
-.uniq-ag-small-video{
+.uniq-ag-small-video {
   width: 100%;
 }
 
 @media screen and (min-width: 769px) {
-  .uniq-ag-large-video{
+  .uniq-ag-large-video {
     display: block;
     width: 100%;
   }
-  .uniq-ag-small-video{
+  .uniq-ag-small-video {
     display: none;
   }
 }
 
 /* Image Components  ====================================================================================================================================================== */
-.uniq-ag-image-component{
+.uniq-ag-image-component {
   width: 100%;
   height: 100%;
 }
 
-.uniq-ag-large-image{
+.uniq-ag-large-image {
   display: none;
 }
 
-.uniq-ag-small-image{
+.uniq-ag-small-image {
   width: 100%;
 }
 
 @media screen and (min-width: 769px) {
-  .uniq-ag-large-image{
+  .uniq-ag-large-image {
     display: block;
     width: 100%;
   }
-  .uniq-ag-small-image{
+  .uniq-ag-small-image {
     display: none;
+  }
+}
+
+/* EcoIconsMarquee Components  ====================================================================================================================================================== */
+.uniq-ag-marquee-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.uniq-ag-ecoIcon-marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  padding: 10px 0;
+  width: 60%;
+}
+
+.uniq-ag-ecoIcon-marquee::before,
+.uniq-ag-ecoIcon-marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.uniq-ag-ecoIcon-marquee::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.uniq-ag-ecoIcon-marquee::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.uniq-ag-ecoIcon-marquee-content {
+  display: flex;
+  gap: 20px;
+  animation: uniq-ecoIcon-marquee 30s linear infinite;
+  width: max-content;
+}
+
+.uniq-ag-ecoIcon-marquee-content img {
+  width: 150px;
+  height: auto;
+}
+
+@keyframes uniq-ecoIcon-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+  .uniq-ag-ecoIcon-marquee {
+    width: 85%;
+  }
+  .uniq-ag-ecoIcon-marquee-content img {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .uniq-ag-ecoIcon-marquee {
+    width: 90%;
+  }
+  .uniq-ag-ecoIcon-marquee-content img {
+    width: 100px;
+    height: auto;
   }
 }

@@ -4,10 +4,18 @@ import ShopAllProducts from "../Collections/ShopAllProducts";
 import AllCollections from "../Collections/AllCollections";
 import VideoBanners from "../Components/Video/VideoBanners";
 import ImageBanners from "../Components/Image/ImageBanners";
+import EcoIcons from "../Components/Marques/EcoIcons";
 
 const HomePage = () => {
   return (
+
+
     <Layout>
+
+      <section className="sections">
+        <EcoIcons/>
+      </section>
+
       <section className="sections">
         <ImageBanners
           largeImageSrc="https://cdn.shopify.com/s/files/1/0589/0192/1956/files/DeTan_banner.jpg?v=1725971111"
