@@ -769,3 +769,30 @@ footer {
   background-position: 0% 0%;
   animation: pulse 1s ease-in-out infinite;
 }
+
+
+/* Components  ====================================================================================================================================================== */
+
+/* Video Components  ====================================================================================================================================================== */
+.uniq-ag-video-component{
+  width: 100%;
+  height: 100%;
+}
+
+.uniq-ag-large-video{
+  display: none;
+}
+
+.uniq-ag-small-video{
+  width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+  .uniq-ag-large-video{
+    display: block;
+    width: 100%;
+  }
+  .uniq-ag-small-video{
+    display: none;
+  }
+}
