@@ -796,3 +796,27 @@ footer {
     display: none;
   }
 }
+
+/* Image Components  ====================================================================================================================================================== */
+.uniq-ag-image-component{
+  width: 100%;
+  height: 100%;
+}
+
+.uniq-ag-large-image{
+  display: none;
+}
+
+.uniq-ag-small-image{
+  width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+  .uniq-ag-large-image{
+    display: block;
+    width: 100%;
+  }
+  .uniq-ag-small-image{
+    display: none;
+  }
+}
