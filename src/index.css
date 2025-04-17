@@ -631,7 +631,7 @@ footer {
 }
 
 .uniq-ag-arrow-btn {
-  background: var(--bg-annoucement-bar);
+  background: transparent;
   color: var(--btn-primary-color);
   padding: 10px;
   height: 60px;
@@ -642,13 +642,12 @@ footer {
   justify-content: center;
   cursor: pointer;
   z-index: 1;
-  transition: background 0.3s ease;
   border: none;
   outline: none;
 }
 
 .uniq-ag-arrow-btn:hover {
-  background: transparent;
+  background: var(--bg-annoucement-bar);
 }
 
 .uniq-ag-arrow-btn.left {
