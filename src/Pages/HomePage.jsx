@@ -5,15 +5,17 @@ import AllCollections from "../Collections/AllCollections";
 import VideoBanners from "../Components/Video/VideoBanners";
 import ImageBanners from "../Components/Image/ImageBanners";
 import EcoIcons from "../Components/Marques/EcoIcons";
+import FeaturedIn from "../Components/Marques/FeaturedIn";
 
 const HomePage = () => {
   return (
-
-
     <Layout>
+      <section className="sections">
+        <FeaturedIn />
+      </section>
 
       <section className="sections">
-        <EcoIcons/>
+        <EcoIcons />
       </section>
 
       <section className="sections">
