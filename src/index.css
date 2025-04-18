@@ -672,6 +672,36 @@ footer {
   scroll-behavior: smooth;
 }
 
+.uniq-ag-all-products-list::before,
+.uniq-ag-all-products-list::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.uniq-ag-all-products-list::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.uniq-ag-all-products-list::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+
 .uniq-ag-all-products-list::-webkit-scrollbar {
   display: none;
 }
