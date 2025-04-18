@@ -1061,17 +1061,13 @@ footer {
   .uniq-ag-texts-marquee {
     width: 90%;
   }
-
-  .uniq-ag-texts-marquee-content {
-    gap: 0px;
-  }
 }
 
 .uniq-texts-text {
   font-size: var(--font-size-text-large-d);
   font-weight: 400;
-  font-family: var(--font-fam-primary);
-  color: var(--font-color-secondary);
+  font-family: var(--font-family-primary);
+  color: var(--btn-primary-color);
   text-transform: uppercase;
   white-space: nowrap;
 }
