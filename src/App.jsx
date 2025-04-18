@@ -1,7 +1,15 @@
 import { Route, Routes } from "react-router-dom";
+import { useEffect, useState } from "react";
+
 import "./App.css";
-import HomePage from "./Pages/HomePage";
+
+import { IoIosArrowUp } from "react-icons/io";
+
+import SmoothScrolling from "./Libs/Utils/SmoothScrolling";
+import AutoScrollToTop from "./Libs/Utils/AutoScrollToTop";
+
 import Header from "./Layout/Header/Header";
+import HomePage from "./Pages/HomePage";
 import ReviewsPage from "./Pages/HeaderPages/ReviewsPage";
 import AboutUsPage from "./Pages/HeaderPages/AboutUsPage";
 import FaqsPage from "./Pages/HeaderPages/FaqsPage";
@@ -17,13 +25,29 @@ import CancelRefundPolicy from "./Pages/FooterPages.jsx/CancelRefundPolicy";
 import OffersPage from "./Pages/FooterPages.jsx/OffersPage";
 import PressAndMedia from "./Pages/FooterPages.jsx/PressAndMedia";
 import ChangePage from "./Pages/FooterPages.jsx/ChangePage";
-import SmoothScrolling from "./Libs/Utils/SmoothScrolling";
-import AutoScrollToTop from "./Libs/Utils/AutoScrollToTop";
 
 function App() {
+  const [showTopButton, setShowTopButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowTopButton(window.scrollY > 300);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <>
       <Header />
+      {showTopButton && (
+        <button
+          className="go-to-top"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
+          <IoIosArrowUp />
+        </button>
+      )}
       <SmoothScrolling>
         <AutoScrollToTop>
           <Routes>
