@@ -18,7 +18,7 @@ const Layout = ({
         <title>{title}</title>
       </Helmet>
 
-      <main>{children}</main>
+      <main className="uniq-ag-layout-main">{children}</main>
     </>
   );
 };

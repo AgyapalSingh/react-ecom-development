@@ -86,12 +86,24 @@ a {
   background-color: rgb(255, 255, 255);
 }
 
+/* Main  ====================================================================================================================================================== */
+
+.uniq-ag-layout-main {
+  margin-top: 110px;
+}
+
 /* Header  ====================================================================================================================================================== */
 
 header {
   height: 110px;
   display: flex;
   flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  will-change: transform;
 }
 
 /* Annoucement Bar */
@@ -102,6 +114,7 @@ header {
   justify-content: center;
   height: 35px;
   background-color: var(--bg-annoucement-bar);
+  transition: transform 0.6s ease;
 }
 
 .uniq-ag-animation-container {
@@ -119,7 +132,10 @@ header {
   flex-direction: row;
   justify-content: space-between;
   height: 75px;
+  width: 100%;
   background-color: #183457;
+  transition: transform 0.6s ease;
+  will-change: transform;
 }
 
 .uniq-ag-navbar-logo {
