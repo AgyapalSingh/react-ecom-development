@@ -1,3 +1,20 @@
+/* 
+@media screen and (min-width: 1281px) and (max-width: 1536px) {
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+
+@media screen and (max-width: 480px) {
+} 
+*/
+
 :root {
   --loader-bg-light: #f5f2ee;
 
@@ -192,6 +209,12 @@ header {
   color: var(--text-color-light);
   font-size: var(--font-size-heading-medium-d);
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .uniq-ag-navbar-btns button {
+    font-size: var(--font-size-heading-medium-m);
+  }
 }
 
 .uniq-ag-navbar-cart {
