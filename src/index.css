@@ -267,7 +267,7 @@ header {
   .uniq-ag-mobile-nav-drawer {
     display: block;
     position: fixed;
-    top: 110px;
+    top: 75px;
     right: 0;
     background-color: var(--bg-color);
     width: 100%;
