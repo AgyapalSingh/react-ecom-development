@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Layout from "../../Layout/Layout";
 
 const CancelRefundPolicy = () => {
   return (
-    <div>CancelRefundPolicy</div>
-  )
-}
+    <Layout title="Cancel and Refund Policy | Uniqaya Lifestyle">
+      CancelRefundPolicy
+    </Layout>
+  );
+};
 
-export default CancelRefundPolicy
+export default CancelRefundPolicy;

@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import Layout from "../../Layout/Layout";
 
 const AboutUsPage = () => {
-  return (
-    <div>AboutUsPage</div>
-  )
-}
+  return <Layout title="About Us | Uniqaya Lifestyle">About Us Page</Layout>;
+};
 
-export default AboutUsPage
+export default AboutUsPage;

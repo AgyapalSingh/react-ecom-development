@@ -1,9 +1,10 @@
 import React from 'react'
+import Layout from '../../Layout/Layout'
 
 const PressAndMedia = () => {
   return (
-    <div>PressAndMedia</div>
+    <Layout title="Press & Media | Uniqaya Lifestyle">PressAndMedia</Layout>
   )
 }
 
-export default PressAndMedia
+export default PressAndMedia;

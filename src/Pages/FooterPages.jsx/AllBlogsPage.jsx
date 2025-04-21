@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import Layout from "../../Layout/Layout";
 
 const AllBlogsPage = () => {
-  return (
-    <div>AllBlogsPage</div>
-  )
-}
+  return <Layout title="Blogs | Uniqaya Lifestyle">AllBlogsPage</Layout>;
+};
 
-export default AllBlogsPage
+export default AllBlogsPage;

@@ -1,8 +1,9 @@
 import React from 'react'
+import Layout from '../../Layout/Layout'
 
 const ChangePage = () => {
   return (
-    <div>ChangePage</div>
+    <Layout title="C.H.A.N.G.E | Uniqaya Lifestyle">ChangePage</Layout>
   )
 }
 

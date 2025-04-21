@@ -10,7 +10,7 @@ import ScrollingText from "../Components/Marques/ScrollingText";
 
 const HomePage = () => {
   return (
-    <Layout>
+    <Layout title="Home | Uniqaya Lifestyle" >
       <section className="sections">
         <ScrollingText />
       </section>
