@@ -7,10 +7,14 @@ import ImageBanners from "../Components/Image/ImageBanners";
 import EcoIcons from "../Components/Marques/EcoIcons";
 import FeaturedIn from "../Components/Marques/FeaturedIn";
 import ScrollingText from "../Components/Marques/ScrollingText";
+import ImageSlider from "../Components/Sliders/ImageSlider";
 
 const HomePage = () => {
   return (
     <Layout title="Home | Uniqaya Lifestyle" >
+      <section className="sections">
+        <ImageSlider />
+      </section>
       <section className="sections">
         <ScrollingText />
       </section>

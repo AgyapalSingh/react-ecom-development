@@ -1160,3 +1160,52 @@ footer {
   text-transform: uppercase;
   white-space: nowrap;
 }
+
+/* ImageSlider Components  ====================================================================================================================================================== */
+
+.uniq-ag-image-slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.uniq-ag-image-slider-wrapper {
+  position: relative;
+}
+
+.uniq-ag-image-slider-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.uniq-ag-image-nav-button {
+  position: absolute;
+  background: transparent;
+  color: var(--btn-primary-color);
+  height: 60px;
+  width: 60px;
+  font-size: var(--font-size-heading-small-d);
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+  border: none;
+  outline: none;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.uniq-ag-image-nav-button:hover {
+  background: var(--bg-annoucement-bar);
+}
+
+.uniq-ag-image-nav-button.left {
+  left: 0px;
+}
+
+.uniq-ag-image-nav-button.right {
+  right: 0px;
+}
